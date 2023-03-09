@@ -1,0 +1,99 @@
+body {
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ul, ol {
+    text-align: left;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-navigation a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 15px;
+    display: block;
+}
+
+.top-navigation #links {
+    display: none;
+}
+
+.middle-container {
+    margin: 100px 0;
+    padding: 15px;
+}
+
+.bottom-container {
+    padding: 50px 0 20px;
+    background-color: #66BFBF;
+    margin-top: auto;
+}
+
+.vimigo-logo {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 12%;
+}
+
+.menu-logo {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 5%;
+}
+
+.accordion {
+    background-color: #D9FCF6;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 18px;
+    transition: 0.2s;
+    font-weight: bold;
+    font-family: Kristen ITC;
+}
+
+.active, .accordion:hover {
+    background-color: #BCF7ED;
+}
+
+.dropdown {
+    padding: 0 18px;
+    background-color: #E4F9F5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 7px;
+}
+
+.active:after {
+    content: '\2212';
+    font-weight: bold;
+}
+
+
+.footer {
+    color: #11999E;
+    margin: 10px 20px;
+}

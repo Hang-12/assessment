@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="css/FAQ.css">
+    <link rel="icon" href="vimigo_logo_mini.png">
+</head>
+<body>
+    <div class="top-container">
+        <a href="https://www.vimigoapp.com/about-us/"><img class="vimigo-logo" src="vimigo.png" alt="Vimigo"></a>
+        <div class="top-navigation">
+            <div id="links">
+                <a href="https://www.vimigoapp.com/about-us/">About Us</a>
+                <a href="FAQ.html">FAQ Page</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="menu-logo" src="menu.png" alt="Menu"></a>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("links");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <div class="middle-container">
+        <button class="accordion">What is your aim to work in this Company?</button>
+        <div class="dropdown">
+            <ul type="circle">
+                <li>To gain more working experience, learn more things and do what I can do.</li>
+            </ul>
+        </div>
+        <button class="accordion">What do you think you can do for the Company?</button>
+        <div class="dropdown">
+            <ul type="circle">
+                <li>I believe I can help company to build some web applications, give more ideas and opinions and not to be troublesome.</li>
+            </ul>
+        </div>
+        <button class="accordion">In 5 years of time, how would you imagine yourself to be?</button>
+        <div class="dropdown">
+            <ul type="circle">
+                <li>A person who has a great progress a little by little, travel anywhere I want and still a kind and warm-hearted boy.</li>
+            </ul>
+        </div>
+        <button class="accordion">What are the Top 3 questions you would like to ask the Company?</button>
+        <div class="dropdown">
+            <ol type="1">
+                <li>May I know what I can learn that is related to IT in Vimigo?</li>
+                <li>May I know what is the atmosphere among the employees in Vimigo?</li>
+                <li>May I know what is the best in Vimigo?</li>
+            </ol>
+        </div>
+        <button class="accordion">**More questions you can update in future</button>
+        <div class="dropdown"></div>
+        <script>
+        var accordion = document.getElementsByClassName("accordion");
+        for (var i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdown = this.nextElementSibling;
+                if (dropdown.style.maxHeight) {
+                    dropdown.style.maxHeight = null;
+                } else {
+                    dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+                }
+            });
+        }
+        </script>
+    </div>
+    <div class="bottom-container">
+        <a class="footer" href="https://www.vimigoapp.com/about-us/" target="_blank">About Us</a>
+        <a class="footer" href="FAQ.html">FAQ Page</a>
+    </div>
+</body>
+</html>
